@@ -10,7 +10,7 @@ import { Provider } from 'react-redux';
 
 // 스토어 생성
 
-const store = createStore(reducers);
+const store = createStore(reducers, window.devToolsExtention && window.devToolsExtention());
 
 
 ReactDOM.render(
@@ -18,4 +18,4 @@ ReactDOM.render(
       <App />
   </Provider>,
   document.getElementById('root')
-);
+);  
